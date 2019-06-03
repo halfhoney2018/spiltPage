@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>优拓教育（www.yootk.com）—— Bootstrap开发实战</title>
+	<meta charset="UTF-8">
+	<!-- 此时表示根据设备的大小调整页面的显示宽度 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Bootstrap需要jQuery的支持，所以一定要导入jQuery开发包 -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<!-- Bootstrap所需要的一些组件的*.js文件 -->
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/news_list.js"></script>
+	<!-- Bootstrap所需要的一些基础样式 -->
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-md12">	<!-- 定义导航条	-->
+			<div class="panel panel-success">
+				<div class="panel-heading">
+					<strong>新闻管理</strong>
+				</div>
+				<div class="panel-body">
+					<table class="table table-bordered table-hover table-striped">
+						<tr>
+							<td class="text-center"><input type="checkbox" id="selall" name="selall"></td>
+							<td class="text-center"><strong>标题</strong></td>
+							<td class="text-center"><strong>发布日期</strong></td>
+							<td class="text-center"><strong>操作</strong></td>
+						</tr>
+						<tr>
+							<td class="text-center"><input type="checkbox" id="nid" name="nid" value="1"></td>
+							<td class="text-center">Bootstrap课程发布</td>
+							<td class="text-center">2015-03-20</td>
+							<td class="text-center"><button class="btn btn-success btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button></td>
+						</tr>
+						<tr>
+							<td class="text-center"><input type="checkbox" id="nid" name="nid" value="2"></td>
+							<td class="text-center">jQuery课程发布</td>
+							<td class="text-center">2015-01-20</td>
+							<td class="text-center"><button class="btn btn-success btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button></td>
+						</tr>
+						<tr>
+							<td class="text-center"><input type="checkbox" id="nid" name="nid" value="3"></td>
+							<td class="text-center">Semantic课程发布</td>
+							<td class="text-center">2015-07-27</td>
+							<td class="text-center"><button class="btn btn-success btn-xs">
+								<span class="glyphicon glyphicon-edit"></span>&nbsp;修改</button></td>
+						</tr>
+					</table>
+					<button class="btn btn-danger" id="delBtn">
+							<span class="glyphicon glyphicon-trash"></span>&nbsp;删除新闻
+					</button>
+					<div id="pageDiv" class="text-right">
+						<ul class="pagination pagination-sm" id="pagecontrol"></ul>
+					</div>
+				</div>
+				<div class="panel-footer">
+					<strong>优拓教育（www.yootk.com）</strong>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
